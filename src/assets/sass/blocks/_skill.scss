@@ -1,5 +1,5 @@
 .skills {
-    padding-block: var(--space-s-2xl);
+    padding-block: var(--space-xl-2xl);
     background-color: var(--color-accent);
     
     &__title {
@@ -10,9 +10,5 @@
 .skill {
     &__title {
         font-size: var(--step-3);
-    }
-
-    &__item {
-        
     }
 }

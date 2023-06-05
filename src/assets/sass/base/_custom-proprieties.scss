@@ -18,6 +18,8 @@
     // space by Utopia
     /* Space s-l: 18px → 44px */
     --space-s-l: clamp(1.13rem, calc(0.64rem + 2.41vw), 2.75rem);
+    /* Space xl-2xl: 54px → 88px */
+    --space-xl-2xl: clamp(3.38rem, calc(2.75rem + 3.15vw), 5.50rem);
     /* Space s-2xl: 18px → 88px */
     --space-s-2xl: clamp(1.13rem, calc(-0.17rem + 6.48vw), 5.50rem);
 }

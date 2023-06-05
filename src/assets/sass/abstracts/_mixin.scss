@@ -14,6 +14,7 @@
     & {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax($min-width, $max-width));
-        gap: $gap;
+        row-gap: $gap*2;
+        column-gap: $gap;
     }
 }
