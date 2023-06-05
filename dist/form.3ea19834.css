@@ -59,7 +59,6 @@ a, i, button {
 }
 
 header {
-  min-height: 100vh;
   padding-block: var(--space-s-l);
   background-image: url("network.9840a861.jpg");
   background-position: center;
@@ -200,6 +199,14 @@ footer i:hover {
   font-size: var(--step-3);
 }
 
+.header--contact {
+  min-height: 20vh;
+}
+
+.header--home {
+  min-height: 100vh;
+}
+
 .navbar__item {
   font-weight: bold;
 }
@@ -286,4 +293,4 @@ button[visual-data="small"] {
   padding-block: var(--space-xl-2xl);
 }
 
-/*# sourceMappingURL=index.3ea19834.css.map */
+/*# sourceMappingURL=form.3ea19834.css.map */
