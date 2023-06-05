@@ -1,5 +1,18 @@
+.skills {
+    padding-block: var(--space-s-2xl);
+    background-color: var(--color-accent);
+    
+    &__title {
+        font-size: var(--step-4);
+    }
+}
+
 .skill {
     &__title {
         font-size: var(--step-3);
+    }
+
+    &__item {
+        
     }
 }

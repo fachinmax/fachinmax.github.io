@@ -1,5 +1,17 @@
+.portfolio {
+    padding-block: var(--space-s-2xl);
+}
+
 .card {
-    &__text {
+    &__title {
         font-size: var(--step-3);
+    }
+
+    &__description {
+        text-align: center;
+    }
+
+    &__img > img {
+        border-radius: 10px;
     }
 }
