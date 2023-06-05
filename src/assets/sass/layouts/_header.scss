@@ -1,0 +1,6 @@
+@use '../abstracts/mixin';
+
+
+.hero {
+    @include mixin.flow-vertical(2rem);
+}

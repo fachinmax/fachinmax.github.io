@@ -1,0 +1,13 @@
+@use '../abstracts/mixin';
+
+
+.about {
+    @include mixin.flow-vertical(2rem);
+    padding-inline: var(--space-s-2xl);
+
+    &__text {
+        margin-inline: auto;
+        text-align: center;
+        max-width: 60ch;
+    }
+}

@@ -1,0 +1,19 @@
+@use '../abstracts/mixin';
+
+
+.skills {
+    @include mixin.flow-vertical(2rem);
+    padding-inline: var(--space-s-2xl);
+
+    &__container {
+        @include mixin.switcher(2rem, 300px);
+    }
+}
+
+.skill {
+    @include mixin.flow-vertical(2rem);
+}
+
+.skill__list {
+    @include mixin.switcher(2rem, 40px, 70px);
+}

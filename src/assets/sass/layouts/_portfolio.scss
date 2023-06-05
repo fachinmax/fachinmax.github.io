@@ -1,0 +1,15 @@
+@use '../abstracts/mixin';
+
+
+.portfolio {
+    padding-inline: var(--space-s-2xl);
+    @include mixin.flow-vertical(3rem);
+}
+
+.works {
+    @include mixin.switcher(2rem, 400px);
+}
+
+.card {
+    @include mixin.flow-vertical(1rem);
+}

@@ -4,63 +4,194 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.934e8131.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.c4146939.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.3c8f4efb.png">
+    <!-- <link rel="manifest" href="./assets/img/logo/site.webmanifest" /> -->
     <title>Max Fachin | portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.d8b10666.svg">
     <link rel="stylesheet" href="/index.3ea19834.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/706707e3f7.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <section>
-        <nav>
+      <section class="top-header">
+        <nav class="top-header__navbar">
           <ul>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Max Fachin</a></li>
-            <li><a href="">Contact</a></li>
+            <li class="navbar__item"><a href="">Portfolio</a></li>
+            <li class="navbar__item">
+              <a href=""><figure class="nav__icon">
+                  <img src="/favicon.0d64cb7d.ico"></figure></a>
+            </li>
+            <li class="navbar__item"><a href="">About</a></li>
+            <li class="navbar__item"><a href="">Contact</a></li>
           </ul>
         </nav>
       </section>
-      <section>
-        <h1>Fachin Max</h1>
-        <h2>Freelance front-end developer</h2>
-        <button class="cta">View my works</button>
+      <section class="hero">
+        <h1 class="hero__title">Max Fachin</h1>
+        <h2 class="hero__text">Front-end developer</h2>
+        <button class="hero__cta" visual-data="big">View my works</button>
       </section>
     </header>
     <main>
-      <section class="about">
-        <p>
-          Hi, I'm Max Fachin and I'm a front-end developer on web 2.0 and web
-          3.0. I'm a freelance developer and work for create your personal site.
-          I'm specialize in create fliud site as is the perfect way for create
-          light and beautiful site ...
-        </p>
-      </section>
-      <section class="work">
+      <section class="portfolio">
         <h1>Let's see some projects</h1>
-        <div></div>
-        <button>See more</button>
+        <div class="works">
+          <article class="card">
+            <figure class="card__img">
+              <img src="/loopstudios.766d8c00.jpg" alt="loopstudios">
+            </figure>
+            <h1 class="card__title">Loopstudios website</h1>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              totam nulla iste dolor vero nihil, consequatur doloremque hic
+              dignissimos labore? Iure esse provident excepturi corrupti
+              inventore reiciendis aut voluptate perferendis!
+            </p>
+            <button class="card__cta" visual-data="small">
+              View website <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </article>
+          <article class="card">
+            <figure class="card__img">
+              <img src="/loopstudios.766d8c00.jpg" alt="loopstudios">
+            </figure>
+            <h1 class="card__title">Loopstudios website</h1>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              ipsum voluptatum amet deserunt ducimus praesentium quia totam
+              obcaecati animi. Soluta?
+            </p>
+            <button class="card__cta" visual-data="small">
+              View website <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </article>
+        </div>
+        <button class="portfolio__cta" visual-data="regular">See more</button>
       </section>
-      <section class="skill">
-        <div class="skill__front-end"></div>
-        <div class="skill__back-end"></div>
-        <div class="skill__tools"></div>
+      <section class="about">
+        <h1 class="about__title">About me</h1>
+        <p class="about__text">
+          Hi, I'm Max Fachin and I'm a front-end developer on web 2.0 and web
+          3.0. I'm a freelance and work for make your personal site. I'm
+          specialize in fluid sites because is the perfect way for create light
+          and beautiful site ...
+        </p>
+        <button class="about__cta" visual-data="regular">Read more</button>
+      </section>
+      <section class="skills">
+        <h1 class="skills__title">All my skills</h1>
+        <div class="skills__container">
+          <article class="skill front-end">
+            <h1 class="skill__title">Front-end skills</h1>
+            <ul class="skill__list">
+              <li class="skill__item">
+                <figure>
+                  <img src="/html.64d7f209.png" alt="html" title="html">
+                </figure>
+              </li>
+              <li class="skill__item">
+                <figure>
+                  <img src="/css-3.fc2b870d.png" alt="css" title="css">
+                </figure>
+              </li>
+              <li class="skill__item">
+                <figure>
+                  <img src="/js.842333c4.png" alt="javascript" title="javascript">
+                </figure>
+              </li>
+              <li class="skill__item">
+                <figure>
+                  <img src="/metamask.31095b02.svg" alt="metamask" title="metamask">
+                </figure>
+              </li>
+            </ul>
+          </article>
+          <article class="skill back-end">
+            <h1 class="skill__title">Back-end skills</h1>
+            <ul class="skill__list">
+              <li class="skill__item">
+                <figure>
+                  <img src="/django.986199f5.png" alt="django" title="django">
+                </figure>
+              </li>
+              <li class="skill__item">
+                <figure>
+                  <img src="/solidity.6ef1de60.png" alt="solidity" title="solidity">
+                </figure>
+              </li>
+              <li class="skill__item">
+                <figure>
+                  <img src="/brownie.5fac2019.png" alt="brownie" title="brownie">
+                </figure>
+              </li>
+              <li class="skill__item">
+                <figure>
+                  <img src="/python.45945fa6.png" alt="python" title="python">
+                </figure>
+              </li>
+              <li class="skill__item">
+                <figure>
+                  <img src="/mongodb.71eb22ea.svg" alt="mongodb" title="mongodb">
+                </figure>
+              </li>
+              <li class="skill__item">
+                <figure>
+                  <img src="/redis.49307d9c.png" alt="redis" title="redis">
+                </figure>
+              </li>
+              <li class="skill__item">
+                <figure>
+                  <img src="/ganache.6e119f03.svg" alt="ganache" title="ganache">
+                </figure>
+              </li>
+            </ul>
+          </article>
+          <article class="skill tools">
+            <h1 class="skill__title">Tools that I use</h1>
+            <ul class="skill__list">
+              <li class="skill__item">
+                <figure>
+                  <img src="/parcel.a4a9c430.png" alt="parcel" title="parcel">
+                </figure>
+              </li>
+              <li class="skill__item">
+                <figure>
+                  <img src="/visual-studio-code.8db64da0.png" alt="visual studio code" title="visual studio code">
+                </figure>
+              </li>
+              <li class="skill__item">
+                <figure>
+                  <img src="/github.5cc79b1b.png" alt="github" title="github">
+                </figure>
+              </li>
+              <li class="skill__item">
+                <figure>
+                  <img src="/git.c8fc4ca3.png" alt="git" title="git">
+                </figure>
+              </li>
+            </ul>
+          </article>
+        </div>
       </section>
       <section class="contact">
-        <h1>What do you think, let me now</h1>
-        <button>Contact me</button>
+        <h1 class="contact__text">What do you think, let me now</h1>
+        <button class="contact__cta" visual-data="regular">Contact me</button>
       </section>
     </main>
     <footer>
       <nav>
         <ul>
           <li>
-            <a href="#"><i>whatsapp</i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
           </li>
           <li>
-            <a href="#"><i>email</i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
           </li>
           <li>
-            <a href="#"><i>github</i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
           </li>
         </ul>
       </nav>

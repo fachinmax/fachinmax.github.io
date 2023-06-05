@@ -1,0 +1,19 @@
+@mixin flow-horizontal($flow-space) {
+    & > * + * {
+        margin-inline-start: $flow-space;
+    }
+}
+
+@mixin flow-vertical($flow-space) {
+    & > * + * {
+        margin-block-start: $flow-space;
+    }
+}
+
+@mixin switcher($gap, $min-width, $max-width: 1fr) {
+    & {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax($min-width, $max-width));
+        gap: $gap;
+    }
+}

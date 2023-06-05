@@ -1,0 +1,23 @@
+:root {
+    --font-family: sans-serif;
+    // --color-neutral: hsl(274, 18%, 92%);
+    --color-neutral: hsl(0, 0%, 87%);
+    --color-primary: hsl(220, 6%, 20%);
+    --color-accent: hsl(204, 100%, 83%);
+
+    // font-size by Utopia
+    --step--2: clamp(0.78rem, calc(0.75rem + 0.15vw), 0.88rem);
+    --step--1: clamp(0.94rem, calc(0.89rem + 0.24vw), 1.10rem);
+    --step-0: clamp(1.13rem, calc(1.05rem + 0.37vw), 1.38rem);
+    --step-1: clamp(1.35rem, calc(1.24rem + 0.55vw), 1.72rem);
+    --step-2: clamp(1.62rem, calc(1.46rem + 0.78vw), 2.15rem);
+    --step-3: clamp(1.94rem, calc(1.72rem + 1.10vw), 2.69rem);
+    --step-4: clamp(2.33rem, calc(2.03rem + 1.52vw), 3.36rem);
+    --step-5: clamp(2.80rem, calc(2.39rem + 2.07vw), 4.20rem);
+
+    // space by Utopia
+    /* Space s-l: 18px → 44px */
+    --space-s-l: clamp(1.13rem, calc(0.64rem + 2.41vw), 2.75rem);
+    /* Space s-2xl: 18px → 88px */
+    --space-s-2xl: clamp(1.13rem, calc(-0.17rem + 6.48vw), 5.50rem);
+}
