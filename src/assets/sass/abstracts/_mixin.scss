@@ -18,3 +18,17 @@
         column-gap: $gap;
     }
 }
+
+@mixin animation {
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    opacity: 0;
+
+    @keyframes opacity {
+        to {
+            opacity: 1;
+        }
+    }
+}

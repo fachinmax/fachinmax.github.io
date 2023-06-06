@@ -1,3 +1,6 @@
+@use './../abstracts/mixin';
+
+
 .header {
     &[data-visual=small] {
         min-height: 30vh;
@@ -47,18 +50,20 @@
     &__title {
         font-size: var(--step-5);
         text-align: left;
+        @include mixin.animation;
 
         &[data-visual=center] {
             text-align: center;
         }
     }
 
-
     &__text {
         font-size: var(--step-3);
+        @include mixin.animation;
     }
 
     &__cta {
         margin-inline: 0;
+        @include mixin.animation;
     }
 }
