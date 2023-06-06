@@ -41,7 +41,8 @@ h1 {
     text-align: center;
 }
 
-button {
+button,
+.button {
     margin-inline: auto;
     background-color: var(--color-accent);
     border-radius: 5px;
@@ -52,7 +53,8 @@ button {
     transition: scale .25s ease-in-out;
 
     &:hover,
-    &:hover > i {
+    &:hover > i,
+    &:hover > a {
         color: var(--color-accent);
         background-color: var(--color-primary);
         scale: 1.1;

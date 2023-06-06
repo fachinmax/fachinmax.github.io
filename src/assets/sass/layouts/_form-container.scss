@@ -1,0 +1,15 @@
+@use '../abstracts/mixin';
+
+
+.form-container {
+    @include mixin.flow-vertical(2.5rem);
+
+    &__contacts {
+        @include mixin.flow-vertical(1rem);
+    }
+
+    &__form {
+        @include mixin.flow-vertical(3rem);
+        margin-inline: auto;
+    }
+}

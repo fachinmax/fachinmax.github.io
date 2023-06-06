@@ -3,9 +3,4 @@
 
 .contact {
     @include mixin.flow-vertical(2rem);
-    padding-inline: var(--space-s-2xl);
-
-    &__text {
-        font-size: var(--step-3);
-    }
 }

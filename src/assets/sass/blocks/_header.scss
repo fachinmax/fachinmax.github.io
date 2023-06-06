@@ -1,9 +1,12 @@
-.header--contact {
-    min-height: 20vh;
-}
+.header {
+    &[data-visual=small] {
+        min-height: 30vh;
 
-.header--home {
-    min-height: 100vh;
+    }
+
+    &[data-visual=large] {
+        min-height: 100vh;
+    }
 }
 
 .navbar__item {
@@ -31,13 +34,25 @@
 }
 
 .hero {
-    margin-block-start: 20vh;
     font-weight: bold;
+
+    &[data-visual=large] {
+        margin-block-start: 20vh;
+    }
+
+    &[data-visual=small] {
+        margin-block: 5rem;
+    }
 
     &__title {
         font-size: var(--step-5);
         text-align: left;
+
+        &[data-visual=center] {
+            text-align: center;
+        }
     }
+
 
     &__text {
         font-size: var(--step-3);

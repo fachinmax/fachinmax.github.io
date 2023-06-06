@@ -32,7 +32,7 @@
     ></script>
   </head>
   <body>
-    <header class="header--contact">
+    <header class="header" data-visual="small">
       <section class="top-header">
         <nav class="top-header__navbar">
           <ul>
@@ -43,15 +43,48 @@
                   <img src="./assets/img/logo/favicon.ico" /></figure
               ></a>
             </li>
-            <li class="navbar__item"><a href="">About</a></li>
-            <li class="navbar__item"><a href=".">Contact</a></li>
+            <!-- <li class="navbar__item"><a href="">About</a></li> -->
+            <li class="navbar__item"><a href="./form.html">Contact</a></li>
           </ul>
         </nav>
       </section>
-      <section class="hero">
-        <h1 class="hero__title">Write me</h1>
+      <section class="hero" data-visual="small">
+        <h1 class="hero__title" data-visual="center">Write me</h1>
       </section>
     </header>
-    <main></main>
+    <main>
+      <div class="form-container">
+        <p class="form-container__text">
+          Feel free to contact me if you want collaborate, just have a
+          explanation or just a chat.
+        </p>
+        <ul class="form-container__contacts">
+          <li>maxfachin98@gmail.com</li>
+          <li>3896497230</li>
+        </ul>
+        <p class="form-container__text">
+          Or use the form below for send me a request
+        </p>
+        <form class="form-container__form" action="#">
+          <div class="form__field">
+            <input type="text" name="name" required />
+            <label for="name">Name</label>
+          </div>
+          <div class="form__field">
+            <input type="text" name="surname" required />
+            <label for="surname">Last name</label>
+          </div>
+          <div class="form__field">
+            <input type="email" name="email" required />
+            <label for="email">Email</label>
+          </div>
+          <div class="form__field">
+            <textarea name="message" cols="35" rows="6" required></textarea>
+            <label for="message">Message</label>
+          </div>
+          <input type="submit" class="button" visual-data="small" />
+        </form>
+      </div>
+    </main>
   </body>
 </html>

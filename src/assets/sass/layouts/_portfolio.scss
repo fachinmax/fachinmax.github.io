@@ -2,7 +2,6 @@
 
 
 .portfolio {
-    padding-inline: var(--space-s-2xl);
     @include mixin.flow-vertical(3rem);
 }
 
