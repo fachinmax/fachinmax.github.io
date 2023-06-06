@@ -6,7 +6,7 @@
 }
 
 .works {
-    @include mixin.switcher(2rem, 450px);
+    @include mixin.switcher(3rem, 350px);
 }
 
 .card {

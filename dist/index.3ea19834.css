@@ -86,24 +86,6 @@ h1 {
   text-align: center;
 }
 
-button, .button {
-  text-align: center;
-  background-color: var(--color-accent);
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  box-shadow: 5px 5px 30px var(--color-primary);
-  border-radius: 5px;
-  margin-inline: auto;
-  padding: 1em 2em;
-  transition: scale .25s ease-in-out;
-}
-
-button:hover, button:hover > i, button:hover > a, .button:hover, .button:hover > i, .button:hover > a {
-  color: var(--color-accent);
-  background-color: var(--color-primary);
-  scale: 1.1;
-}
-
 p {
   line-height: 1.5;
 }
@@ -137,8 +119,8 @@ footer i:hover {
 }
 
 .works {
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 4rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 6rem 3rem;
   display: grid;
 }
 
@@ -261,6 +243,14 @@ footer i:hover {
   padding-inline: var(--space-s-2xl);
 }
 
+.portfolio p {
+  text-align: center;
+}
+
+.portfolio__cta {
+  margin-inline: auto;
+}
+
 .card__title {
   font-size: var(--step-3);
 }
@@ -271,6 +261,10 @@ footer i:hover {
 
 .card__img > img {
   border-radius: 10px;
+}
+
+.card__cta {
+  margin-inline: auto;
 }
 
 .skills {
@@ -285,6 +279,23 @@ footer i:hover {
 
 .skill__title {
   font-size: var(--step-3);
+}
+
+.button {
+  width: max-content;
+  background-color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  box-shadow: 5px 5px 30px var(--color-primary);
+  border-radius: 5px;
+  padding: 1em 2em;
+  transition: all .25s ease-in-out;
+  display: block;
+}
+
+.button:hover, .button:hover > i {
+  color: var(--color-accent);
+  background-color: var(--color-primary);
 }
 
 .button[data-visual="big"] {
@@ -306,6 +317,10 @@ footer i:hover {
 
 .contact__text {
   font-size: var(--step-3);
+}
+
+.contact__cta {
+  margin-inline: auto;
 }
 
 .form-container {

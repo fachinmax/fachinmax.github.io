@@ -1,6 +1,14 @@
 .portfolio {
     padding-block: var(--space-xl-2xl);
     padding-inline: var(--space-s-2xl);
+
+    & p {
+        text-align: center;
+    }
+
+    &__cta {
+        margin-inline: auto;
+    }
 }
 
 .card {
@@ -14,5 +22,9 @@
 
     &__img > img {
         border-radius: 10px;
+    }
+
+    &__cta {
+        margin-inline: auto;
     }
 }
