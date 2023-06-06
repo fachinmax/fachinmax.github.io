@@ -178,6 +178,17 @@ footer i:hover {
   margin-block-start: 3rem;
 }
 
+.sidenav {
+  position: fixed;
+  top: 50vh;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.sidenav > * + * {
+  margin-block-start: 7px;
+}
+
 .header[data-visual="small"] {
   min-height: 30vh;
 }
@@ -395,6 +406,41 @@ footer i:hover {
 .form__field > input, .form__field > textarea {
   background-color: #0000;
   outline: none;
+}
+
+.sidenav {
+  width: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.sidenav[data-visual="true"] {
+  opacity: 1;
+}
+
+.sidenav[data-visual="false"] {
+  opacity: 0;
+}
+
+@media (width <= 768px) {
+  .sidenav {
+    display: none;
+  }
+}
+
+.sidenav__indicator {
+  width: 3px;
+  height: 50px;
+}
+
+.sidenav__indicator[data-visual="true"] {
+  background-color: var(--color-accent);
+}
+
+.sidenav__indicator[data-visual="false"] {
+  background-color: var(--color-primary);
 }
 
 /*# sourceMappingURL=index.3ea19834.css.map */

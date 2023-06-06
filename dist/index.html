@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/index.3ea19834.css">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/706707e3f7.js" crossorigin="anonymous"></script>
+    <script src="/index.4f492e9b.js" async=""></script>
   </head>
   <body>
     <header class="header" data-visual="large">
@@ -40,7 +41,13 @@
       </section>
     </header>
     <main>
-      <section class="portfolio">
+      <div id="sidenav" class="sidenav" data-visual="false">
+        <a class="sidenav__indicator" data-visual="false" href="#portfolio"></a>
+        <a class="sidenav__indicator" data-visual="false" href="#about"></a>
+        <a class="sidenav__indicator" data-visual="false" href="#skills"></a>
+        <a class="sidenav__indicator" data-visual="false" href="#contact"></a>
+      </div>
+      <section id="portfolio" class="portfolio">
         <h1>Let's see some projects</h1>
         <div class="works">
           <article class="card">
@@ -94,7 +101,7 @@
         </div>
         <a class="portfolio__cta button" data-visual="regular" href="/portfolio.html">See more</a>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <h1 class="about__title">About me</h1>
         <p class="about__text">
           Hi, I'm Max Fachin and I'm a front-end developer on web 2.0 and web
@@ -107,7 +114,7 @@
         <!-- when I have something more about talk about me I'm going to create a proper about page -->
         <!-- <button class="about__cta" data-visual="regular">Read more</button> -->
       </section>
-      <section class="skills">
+      <section id="skills" class="skills">
         <h1 class="skills__title">All my skills</h1>
         <div class="skills__container">
           <article class="skill front-end">
@@ -202,7 +209,7 @@
           </article>
         </div>
       </section>
-      <section class="contact">
+      <section id="contact" class="contact">
         <h1 class="contact__text">What do you think, let me now</h1>
         <a class="contact__cta button" data-visual="regular" href="/form.html">Contact me</a>
       </section>

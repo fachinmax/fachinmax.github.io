@@ -1,0 +1,10 @@
+@use './../abstracts/mixin';
+
+
+.sidenav {
+    position: fixed;
+    top: 50vh;
+    right: 10px;
+    transform: translateY(-50%);
+    @include mixin.flow-vertical(7px);
+}
