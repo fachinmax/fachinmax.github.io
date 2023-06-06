@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/index.3ea19834.css">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/706707e3f7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/form.4f492e9b.js" async=""></script>
   </head>
   <body>
     <header class="header" data-visual="small">
@@ -49,24 +51,24 @@
         <p class="form-container__text">
           Or use the form below for send me a request
         </p>
-        <form class="form-container__form" action="#">
+        <form id="form-email" class="form-container__form" action="#">
           <div class="form__field">
-            <input type="text" name="name" required="">
+            <input id="name" type="text" name="name" required="">
             <label for="name">Name</label>
           </div>
           <div class="form__field">
-            <input type="text" name="surname" required="">
+            <input id="surname" type="text" name="surname" required="">
             <label for="surname">Last name</label>
           </div>
           <div class="form__field">
-            <input type="email" name="email" required="">
+            <input id="email" type="email" name="email" required="">
             <label for="email">Email</label>
           </div>
           <div class="form__field">
-            <textarea name="message" cols="35" rows="6" required=""></textarea>
+            <textarea id="message" name="message" cols="35" rows="6" required=""></textarea>
             <label for="message">Message</label>
           </div>
-          <input type="submit" class="button" data-visual="small">
+          <input type="submit" value="Send" class="button" data-visual="small">
         </form>
       </div>
     </main>
