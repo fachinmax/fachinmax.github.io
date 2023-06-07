@@ -20,6 +20,13 @@
         text-align: center;
     }
 
+    &__img {
+        transition: scale .25s ease-in-out;
+        &:hover {
+            scale: 1.1;
+        }
+    }
+
     &__img > img {
         border-radius: 10px;
     }

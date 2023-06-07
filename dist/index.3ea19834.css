@@ -295,6 +295,14 @@ footer i:hover {
   text-align: center;
 }
 
+.card__img {
+  transition: scale .25s ease-in-out;
+}
+
+.card__img:hover {
+  scale: 1.1;
+}
+
 .card__img > img {
   border-radius: 10px;
 }
