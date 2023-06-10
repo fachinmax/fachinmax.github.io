@@ -1,3 +1,26 @@
+// navbar
+// elements
+const navbar = document.querySelector('#navbar')
+const btn = document.querySelector('#button-navbar')
+
+// function for translate navbar
+const translateNavbar = e => {
+    const buttonClicked = e.target
+    if(buttonClicked.getAttribute('aria-pressed') === 'false') {
+        navbar.setAttribute('visual-hidden', 'true')
+        buttonClicked.setAttribute('aria-pressed', 'true')
+        buttonClicked.setAttribute('aria-expanded', 'true')
+    } else {
+        navbar.setAttribute('visual-hidden', 'false')
+        buttonClicked.setAttribute('aria-pressed', 'false')
+        buttonClicked.setAttribute('aria-expanded', 'false')
+    }
+}
+
+
+btn.addEventListener('click', translateNavbar)
+
+
 // send email
 //keys
 const serviceId = 'service_7w757kr'
@@ -47,7 +70,7 @@ const portfolioSection = document.querySelector('#portfolio')
 const aboutSection = document.querySelector('#about')
 const skillsSection = document.querySelector('#skills')
 const contactSection = document.querySelector('#contact')
-const navbar = document.querySelector('#navbar')
+const topHeader = document.querySelector('#top-header')
 
 if(sidenav) {
     const options = {
@@ -57,7 +80,6 @@ if(sidenav) {
     // observer
     const observer = new IntersectionObserver(function callback(entries, observer) {
         entries.forEach(entry => {
-            console.log(entry)
             if(entry.isIntersecting) {
                 switch(entry.target.classList.value) {
                     case 'portfolio':
@@ -90,7 +112,7 @@ if(sidenav) {
                     break;
                     case 'header':
                         sidenav.setAttribute('data-visual', 'false')
-                        navbar.setAttribute('data-background', 'transparent')
+                        // topHeader.setAttribute('data-background', 'transparent')
                         sidenav.children[0].setAttribute('data-visual', 'false')
                         sidenav.children[1].setAttribute('data-visual', 'false')
                         sidenav.children[2].setAttribute('data-visual', 'false')
@@ -99,7 +121,7 @@ if(sidenav) {
                 }
             } else {
                 if(entry.target.classList.value === 'header') {
-                    navbar.setAttribute('data-background', 'neutral')
+                    // topHeader.setAttribute('data-background', 'neutral')
                 }
             }
         });
@@ -112,3 +134,26 @@ if(sidenav) {
     observer.observe(contactSection)
     observer.observe(header)
 }
+
+// change background color of navbar
+
+const options = {
+    rootMargin: '-200px 0px'
+}
+
+// observer
+const observer = new IntersectionObserver(function callback(entries, observer) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            if(entry.target.classList.value === 'header') {
+                    topHeader.setAttribute('data-background', 'transparent')
+            }
+        } else {
+            if(entry.target.classList.value === 'header') {
+                topHeader.setAttribute('data-background', 'neutral')
+            }
+        }
+    });
+}, options)
+
+observer.observe(header)

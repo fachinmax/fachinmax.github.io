@@ -1,3 +1,6 @@
+@use '../abstracts/breakpoints';
+
+
 .button {
     display: block;
     width: max-content;
@@ -26,5 +29,27 @@
 
     &[data-visual=small] {
         font-size: var(--step--2);
+    }
+}
+
+.top-header__button {
+    display: none;
+    width: 30px;
+    aspect-ratio: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+
+    &[aria-pressed=false] {
+        background-image: url('../img/hamburger-icon.svg');
+    }
+
+    &[aria-pressed=true] {
+        background-image: url('../img/hamburger-close-icon.svg');
+    }
+
+    @media (max-width: map-get(breakpoints.$breakpoints, 'tablet')) {
+        display: inline-block;
     }
 }

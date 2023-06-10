@@ -27,9 +27,9 @@
   </head>
   <body>
     <header class="header" data-visual="large">
-      <section class="top-header">
-        <nav id="navbar" class="top-header__navbar" data-background="neutral">
-          <ul>
+      <section id="top-header" class="top-header" data-background="neutral">
+        <nav class="top-header__navbar">
+          <ul id="navbar" visual-hidden="false">
             <li class="navbar__item">
               <a href="/portfolio.html">Portfolio</a>
             </li>
@@ -41,6 +41,7 @@
             <li class="navbar__item"><a href="/contact.html">Contact</a></li>
           </ul>
         </nav>
+        <button id="button-navbar" class="top-header__button" aria-expanded="false" aria-controls="navbar" aria-pressed="false"></button>
       </section>
       <section class="hero" data-visual="large">
         <h1 class="hero__title">Max Fachin</h1>

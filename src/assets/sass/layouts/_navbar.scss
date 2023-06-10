@@ -1,0 +1,31 @@
+@use '../abstracts/mixin';
+@use '../abstracts/breakpoints';
+
+
+.top-header__navbar > ul {
+    @media (max-width: map-get(breakpoints.$breakpoints, 'tablet')) {
+        transition: transform .25s ease-in-out;
+
+        &[visual-hidden=true] {
+            transform: translateX(0%);
+        }
+
+        &[visual-hidden=false] {
+            transform: translateX(100%);
+        }
+    
+        position: fixed;
+        inset: 0;
+        flex-direction: column;
+        @include mixin.flow-vertical(2em);
+        @include mixin.flow-horizontal(0);
+        align-items: center;
+        background-color: var(--color-neutral);
+        z-index: 5;
+
+        & a {
+            font-size: 1.5rem;
+            color: var(--color-primary) !important;
+        }
+    }
+}

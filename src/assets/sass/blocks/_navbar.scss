@@ -1,24 +1,21 @@
 .top-header {
+    padding-block: var(--space-s-l);
+    padding-inline: var(--space-s-2xl);
+
+    &[data-background=transparent] {
+        background-color: transparent;
+    }
+    
+    &[data-background=neutral] {
+        background-color: hsla(220, 6%, 20%, .8);
+
+        & a {
+            color: var(--color-neutral);
+        }
+    }
     
     &__navbar {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        padding-block: 1rem;
-        z-index: 5;
-        
-        &[data-background=transparent] {
-            background-color: transparent;
-        }
-        
-        &[data-background=neutral] {
-            background-color: hsla(220, 6%, 20%, .8);
-
-            & a {
-                color: white;
-            }
-        }
+        flex-grow: 1;
 
         .navbar__item {
             font-weight: bold;

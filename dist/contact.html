@@ -28,9 +28,9 @@
   </head>
   <body>
     <header class="header" data-visual="small">
-      <section class="top-header">
+      <section id="top-header" class="top-header" data-background="neutral">
         <nav class="top-header__navbar">
-          <ul>
+          <ul id="navbar" visual-hidden="false">
             <li class="navbar__item">
               <a href="/portfolio.html">Portfolio</a>
             </li>
@@ -43,6 +43,7 @@
             <li class="navbar__item"><a href="/contact.html">Contact</a></li>
           </ul>
         </nav>
+        <button id="button-navbar" class="top-header__button" aria-expanded="false" aria-controls="navbar" aria-pressed="false"></button>
       </section>
       <section class="hero" data-visual="small">
         <h1 class="hero__title" data-visual="center">Write me</h1>
