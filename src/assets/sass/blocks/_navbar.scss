@@ -1,0 +1,48 @@
+.top-header {
+    
+    &__navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding-block: 1rem;
+        z-index: 5;
+        
+        &[data-background=transparent] {
+            background-color: transparent;
+        }
+        
+        &[data-background=neutral] {
+            background-color: hsla(220, 6%, 20%, .8);
+
+            & a {
+                color: white;
+            }
+        }
+
+        .navbar__item {
+            font-weight: bold;
+            
+            & > a {
+                position: relative;
+                
+            }
+        
+            & > a::before {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                width: 0;
+                border: 2px solid var(--color-accent);
+                opacity: 0;
+                transition: opacity .25s ease-in-out,
+                            width .25s ease-in-out;
+            }
+        
+            &:hover > a::before {
+                opacity: 1;
+                width: 100%;
+            }
+        }
+    }
+}

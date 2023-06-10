@@ -201,29 +201,6 @@ footer i:hover {
   min-height: 100vh;
 }
 
-.navbar__item {
-  font-weight: bold;
-}
-
-.navbar__item > a {
-  position: relative;
-}
-
-.navbar__item > a:before {
-  content: "";
-  width: 0;
-  border: 2px solid var(--color-accent);
-  opacity: 0;
-  transition: opacity .25s ease-in-out, width .25s ease-in-out;
-  position: absolute;
-  bottom: -10px;
-}
-
-.navbar__item:hover > a:before {
-  opacity: 1;
-  width: 100%;
-}
-
 .hero {
   font-weight: bold;
 }
@@ -453,6 +430,50 @@ footer i:hover {
 
 .sidenav__indicator[data-visual="false"] {
   background-color: var(--color-primary);
+}
+
+.top-header__navbar {
+  z-index: 5;
+  padding-block: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.top-header__navbar[data-background="transparent"] {
+  background-color: #0000;
+}
+
+.top-header__navbar[data-background="neutral"] {
+  background-color: #303236cc;
+}
+
+.top-header__navbar[data-background="neutral"] a {
+  color: #fff;
+}
+
+.top-header__navbar .navbar__item {
+  font-weight: bold;
+}
+
+.top-header__navbar .navbar__item > a {
+  position: relative;
+}
+
+.top-header__navbar .navbar__item > a:before {
+  content: "";
+  width: 0;
+  border: 2px solid var(--color-accent);
+  opacity: 0;
+  transition: opacity .25s ease-in-out, width .25s ease-in-out;
+  position: absolute;
+  bottom: -10px;
+}
+
+.top-header__navbar .navbar__item:hover > a:before {
+  opacity: 1;
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.3ea19834.css.map */

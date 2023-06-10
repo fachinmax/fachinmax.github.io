@@ -47,6 +47,7 @@ const portfolioSection = document.querySelector('#portfolio')
 const aboutSection = document.querySelector('#about')
 const skillsSection = document.querySelector('#skills')
 const contactSection = document.querySelector('#contact')
+const navbar = document.querySelector('#navbar')
 
 if(sidenav) {
     const options = {
@@ -89,11 +90,16 @@ if(sidenav) {
                     break;
                     case 'header':
                         sidenav.setAttribute('data-visual', 'false')
+                        navbar.setAttribute('data-background', 'transparent')
                         sidenav.children[0].setAttribute('data-visual', 'false')
                         sidenav.children[1].setAttribute('data-visual', 'false')
                         sidenav.children[2].setAttribute('data-visual', 'false')
                         sidenav.children[3].setAttribute('data-visual', 'false')
                     break;
+                }
+            } else {
+                if(entry.target.classList.value === 'header') {
+                    navbar.setAttribute('data-background', 'neutral')
                 }
             }
         });

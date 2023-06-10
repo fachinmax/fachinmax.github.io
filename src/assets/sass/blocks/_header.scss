@@ -4,35 +4,10 @@
 .header {
     &[data-visual=small] {
         min-height: 30vh;
-
     }
 
     &[data-visual=large] {
         min-height: 100vh;
-    }
-}
-
-.navbar__item {
-    font-weight: bold;
-    
-    & > a {
-        position: relative;
-    }
-
-    & > a::before {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        width: 0;
-        border: 2px solid var(--color-accent);
-        opacity: 0;
-        transition: opacity .25s ease-in-out,
-                    width .25s ease-in-out;
-    }
-
-    &:hover > a::before {
-        opacity: 1;
-        width: 100%;
     }
 }
 
